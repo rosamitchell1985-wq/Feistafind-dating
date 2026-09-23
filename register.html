@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Your Free Profile | Feistafind</title>
+  <meta name="description" content="Join Feistafind free and meet adults 50+ looking for friendship, companionship, and meaningful relationships.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%237d2942'/%3E%3Cpath d='M16 24s-7-4.4-9.2-8.6C5.3 12.2 7.2 9 10.4 9c2 0 3.4 1.1 4.1 2.5L16 14l1.5-2.5C18.2 10.1 19.6 9 21.6 9c3.2 0 5.1 3.2 3.6 6.4C23 19.6 16 24 16 24z' fill='%23f8f6f1'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html" aria-label="Feistafind home">
+        <svg width="34" height="34" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#7d2942"/><path d="M16 24s-7-4.4-9.2-8.6C5.3 12.2 7.2 9 10.4 9c2 0 3.4 1.1 4.1 2.5L16 14l1.5-2.5C18.2 10.1 19.6 9 21.6 9c3.2 0 5.1 3.2 3.6 6.4C23 19.6 16 24 16 24z" fill="#f8f6f1"/></svg>
+        Feistafind
+      </a>
+      <div class="header-actions">
+        <button type="button" class="icon-btn" data-theme-toggle aria-label="Toggle dark mode">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <a class="btn btn--ghost btn--sm" href="login.html" data-auth-link="login">Log In</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="auth-layout">
+      <aside class="auth-aside">
+        <span class="watermark" aria-hidden="true">Begin</span>
+        <p class="kicker">Join free</p>
+        <h1>Meaningful Connections. New Beginnings.</h1>
+        <ul>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12l2 2 4-5"/><circle cx="12" cy="12" r="9"/></svg>Free to join and browse</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12l2 2 4-5"/><circle cx="12" cy="12" r="9"/></svg>You control what you share</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12l2 2 4-5"/><circle cx="12" cy="12" r="9"/></svg>Safety tools built in from the start</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12l2 2 4-5"/><circle cx="12" cy="12" r="9"/></svg>Designed for adults 50+</li>
+        </ul>
+      </aside>
+
+      <div class="auth-main">
+        <div class="auth-card" style="max-width:560px">
+          <div class="auth-card__head">
+            <h1 style="font-size:2rem">Create your free profile</h1>
+            <p class="text-soft">Already a member? <a href="login.html">Log in</a>.</p>
+          </div>
+
+         
+
+          <form id="register-form" novalidate>
+            <div class="form-row">
+              <div class="field">
+                <label for="reg-name">First name</label>
+                <input id="reg-name" type="text" autocomplete="given-name" required>
+                <span class="error-text" role="alert"></span>
+              </div>
+              <div class="field">
+                <label for="reg-email">Email</label>
+                <input id="reg-email" type="email" autocomplete="email" required>
+                <span class="error-text" role="alert"></span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="reg-password">Password</label>
+                <div class="password-wrap">
+                  <input id="reg-password" type="password" autocomplete="new-password" required>
+                  <button type="button" class="password-toggle" aria-label="Show password">Show</button>
+                </div>
+                <span class="hint">At least 8 characters, with a letter and a number.</span>
+                <span class="error-text" role="alert"></span>
+              </div>
+              <div class="field">
+                <label for="reg-dob">Date of birth</label>
+                <input id="reg-dob" type="date" required>
+                <span class="hint">You must be 18 or older. Feistafind is designed for adults 50+.</span>
+                <span class="error-text" role="alert"></span>
+              </div>
+            </div>
+
+            <div class="form-section">
+              <h2>About you</h2>
+              <div class="form-row">
+                <div class="field">
+                  <label for="reg-location">Location</label>
+                  <input id="reg-location" type="text" placeholder="City or region only" autocomplete="address-level2" required>
+                  <span class="hint">Never share your street address.</span>
+                  <span class="error-text" role="alert"></span>
+                </div>
+                <div class="field">
+                  <label for="reg-gender">Gender</label>
+                  <select id="reg-gender" required>
+                    <option value="">Choose…</option>
+                    <option>Woman</option><option>Man</option>
+                    <option>Non-binary</option><option>Prefer not to say</option>
+                  </select>
+                  <span class="error-text" role="alert"></span>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="field">
+                  <label for="reg-seeking">Interested in</label>
+                  <select id="reg-seeking" required>
+                    <option value="">Choose…</option>
+                    <option value="women">Women</option><option value="men">Men</option>
+                    <option value="everyone">Everyone</option>
+                  </select>
+                  <span class="error-text" role="alert"></span>
+                </div>
+                <div class="field">
+                  <label for="reg-goals">Relationship goals</label>
+                  <select id="reg-goals" required>
+                    <option value="">Choose…</option>
+                    <option>Friendship first</option>
+                    <option>Companionship</option>
+                    <option>Dating</option>
+                    <option>Dating, open to more</option>
+                    <option>Long-term relationship</option>
+                  </select>
+                  <span class="error-text" role="alert"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-section">
+              <h2>Your interests</h2>
+              <p class="text-soft" style="margin-top:-6px">Choose as many as you like.</p>
+              <div class="chip-set">
+                <button type="button" class="chip" aria-pressed="false">Travel</button>
+                <button type="button" class="chip" aria-pressed="false">Cooking</button>
+                <button type="button" class="chip" aria-pressed="false">Gardening</button>
+                <button type="button" class="chip" aria-pressed="false">Books</button>
+                <button type="button" class="chip" aria-pressed="false">Music</button>
+                <button type="button" class="chip" aria-pressed="false">Walking</button>
+                <button type="button" class="chip" aria-pressed="false">Photography</button>
+                <button type="button" class="chip" aria-pressed="false">Dancing</button>
+                <button type="button" class="chip" aria-pressed="false">Movies</button>
+                <button type="button" class="chip" aria-pressed="false">Art</button>
+                <button type="button" class="chip" aria-pressed="false">Golf</button>
+                <button type="button" class="chip" aria-pressed="false">Fitness</button>
+                <button type="button" class="chip" aria-pressed="false">Volunteering</button>
+                <button type="button" class="chip" aria-pressed="false">Pets</button>
+                <button type="button" class="chip" aria-pressed="false">Food</button>
+                <button type="button" class="chip" aria-pressed="false">Nature</button>
+              </div>
+            </div>
+
+            <div class="form-section">
+              <h2>Tell your story</h2>
+              <div class="field">
+                <label for="reg-bio">Profile description <span class="hint">(optional for now)</span></label>
+                <textarea id="reg-bio" placeholder="Share a little about yourself — what you enjoy, what a good day looks like…"></textarea>
+                <span class="error-text" role="alert"></span>
+              </div>
+              <div class="field">
+                <label for="reg-photo">Profile photo <span class="hint">(optional, demo preview only)</span></label>
+                <input id="reg-photo" type="file" accept="image/*">
+                <span class="hint">Demo only: the photo is previewed and stored in your browser, never uploaded. Production uploads need secure server-side handling.</span>
+                <span class="error-text" role="alert"></span>
+              </div>
+              <div id="photo-preview" aria-live="polite"></div>
+            </div>
+
+            <div class="form-section">
+              <h2>Your agreements</h2>
+              <div class="field"><label class="checkbox"><input id="agree-age" type="checkbox"> <span>I am 18 years or older.</span></label><span class="error-text" role="alert"></span></div>
+              <div class="field"><label class="checkbox"><input id="agree-terms" type="checkbox"> <span>I agree to the <a href="terms.html">Terms &amp; Conditions</a>.</span></label><span class="error-text" role="alert"></span></div>
+              <div class="field"><label class="checkbox"><input id="agree-privacy" type="checkbox"> <span>I have read the <a href="privacy-policy.html">Privacy Policy</a>.</span></label><span class="error-text" role="alert"></span></div>
+              <label class="checkbox"><input id="agree-comms" type="checkbox"> <span>I agree to receive optional communications (news and tips). You can unsubscribe any time.</span></label>
+            </div>
+
+            <button class="btn btn--primary btn--lg btn--block mt-3" type="submit">Create My Free Profile</button>
+            <p class="hint text-center mt-2">We only ask for what we need. You can edit or delete your profile at any time.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/auth.js"></script>
+</body>
+</html>

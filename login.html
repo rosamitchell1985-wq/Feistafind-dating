@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log In | Feistafind</title>
+  <meta name="description" content="Log in to Feistafind to continue your conversations and meet people near you.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%237d2942'/%3E%3Cpath d='M16 24s-7-4.4-9.2-8.6C5.3 12.2 7.2 9 10.4 9c2 0 3.4 1.1 4.1 2.5L16 14l1.5-2.5C18.2 10.1 19.6 9 21.6 9c3.2 0 5.1 3.2 3.6 6.4C23 19.6 16 24 16 24z' fill='%23f8f6f1'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html" aria-label="Feistafind home">
+        <svg width="34" height="34" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#7d2942"/><path d="M16 24s-7-4.4-9.2-8.6C5.3 12.2 7.2 9 10.4 9c2 0 3.4 1.1 4.1 2.5L16 14l1.5-2.5C18.2 10.1 19.6 9 21.6 9c3.2 0 5.1 3.2 3.6 6.4C23 19.6 16 24 16 24z" fill="#f8f6f1"/></svg>
+        Feistafind
+      </a>
+      <div class="header-actions">
+        <button type="button" class="icon-btn" data-theme-toggle aria-label="Toggle dark mode">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <a class="btn btn--primary btn--sm" href="register.html">Join Free</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="auth-layout">
+      <aside class="auth-aside">
+        <span class="watermark" aria-hidden="true">Welcome</span>
+        <p class="kicker">Welcome back</p>
+        <h1>Good conversations are worth returning to.</h1>
+        <ul>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12l2 2 4-5"/><circle cx="12" cy="12" r="9"/></svg>Pick up your conversations where you left off</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12l2 2 4-5"/><circle cx="12" cy="12" r="9"/></svg>See who's new in your area</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12l2 2 4-5"/><circle cx="12" cy="12" r="9"/></svg>Manage your privacy and safety tools</li>
+        </ul>
+      </aside>
+
+      <div class="auth-main">
+        <div class="auth-card">
+          <div class="auth-card__head">
+            <h1 style="font-size:2rem">Log in to Feistafind</h1>
+            <p class="text-soft">New here? <a href="register.html">Create a free profile</a>.</p>
+          </div>
+
+         
+
+          <form id="login-form" novalidate>
+            <div class="field">
+              <label for="login-email">Email</label>
+              <input id="login-email" type="email" autocomplete="email" placeholder="you@example.com" required>
+              <span class="error-text" role="alert"></span>
+            </div>
+            <div class="field">
+              <label for="login-password">Password</label>
+              <div class="password-wrap">
+                <input id="login-password" type="password" autocomplete="current-password" required>
+                <button type="button" class="password-toggle" aria-label="Show password">Show</button>
+              </div>
+              <span class="error-text" role="alert"></span>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin:6px 0 18px">
+              <label class="checkbox" style="margin:0"><input id="remember" type="checkbox"> <span>Remember me</span></label>
+              <a href="#forgot" id="forgot-link">Forgot password?</a>
+            </div>
+            <button class="btn btn--primary btn--block" type="submit">Log In</button>
+          </form>
+
+          <p class="auth-alt">or</p>
+          <button class="btn btn--outline btn--block" type="button" id="demo-login">Continue with Demo Account</button>
+          <p class="auth-alt" style="font-size:.92rem">The demo account signs you in instantly so you can explore — no registration needed.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/auth.js"></script>
+</body>
+</html>
